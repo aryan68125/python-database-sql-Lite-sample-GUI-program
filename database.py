@@ -86,6 +86,7 @@ def delete():
 
     #now we need to close the connection to our database when the operation is complete
     database_connect.close()
+    window2.destroy()
 
 '''
 create a submit function for the button that will handle the background database operation
@@ -143,6 +144,7 @@ to the user in the outputfield textView
 '''
 def show_saved_data():
     #creating a new window
+    global window2
     window2 = Toplevel()
     window2.title("output window")
     #setting up the window2 size to be 400x400 size
