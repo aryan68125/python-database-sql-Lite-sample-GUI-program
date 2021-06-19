@@ -338,7 +338,6 @@ def show_the_selected_record():
     Selected_Record_Frame.grid_propagate(False)
 
     #delete the previous text of the label
-    Selected_record_label.config(text="")
     Selected_record_label = Label(Selected_Record_Frame,text=persons_info,anchor='w')
     Selected_record_label.grid(row=0,column=0,sticky='W')
 
